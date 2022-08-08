@@ -1,5 +1,5 @@
 # Hola CoderCats 😺
-![avengers](/imagenes/cats.jpg)
+![CoderCats](/imagenes/cats.jpg)
 
 
 ### En este archivos vamos a poder encontrar el material teorico sobre cada
