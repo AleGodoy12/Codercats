@@ -12,23 +12,36 @@ print(esValido(mail))
 
 
 #2
-numero = input('Ingresá un numero')
-i = 0
-def numero (num):
-    while (num != 0):
-        i += num
-        i += 1
-        return i 
-    
-num = 'numero'
-digitos = []
-def numero (num):
-    num = int(input('Ingresa un numero'))
-    i = 0
-    for i in num:
-        digitos.append(i)
-    sum(digitos)
-    return digitos
+def numeros(num):
+    digitos= [int(numero) for numero in str(num)]
+    acc = 0
+    for i in digitos:
+        acc += i
+    return acc
 
-numero(num)
-print(numero(num))
+numUsuario = input("Ingrese un número ")
+while (numUsuario != "0"):
+    print(numeros(numUsuario))
+    numUsuario = input("Ingrese un número ")
+print("Listo")
+
+
+#3
+numUsuario = input("Ingrese un número ")
+def numeros(num):
+    digitos= [int(numero) for numero in str(num)]
+    acc = 0
+    for i in digitos:
+        acc += i
+    return acc
+
+lista = []
+
+
+while (numUsuario != "0"):
+    print(numeros(numUsuario))
+    numUsuario = input("Ingrese un número ")
+    lista.append(eval(numUsuario))
+
+print("Listo")
+

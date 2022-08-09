@@ -1,7 +1,4 @@
 #1
-from ast import Num
-
-
 lista = []
 i = 0
 for i in range(0,100):
@@ -26,10 +23,10 @@ lista.sort()
 print(lista)
 
 #4
-num = int(input('Ingresá un número'))
 lista = []
+num = int(input('Ingresá un número'))
 while (num != 0):
-    num = int(input('Ingresá un número'))
     lista.append(num)
+    num = int(input('Ingresá un número'))
 lista.sort(reverse=True)
 print(lista)
