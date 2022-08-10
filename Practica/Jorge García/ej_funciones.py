@@ -20,7 +20,7 @@ else:
 def sumarDigitos(numero):
     digitos = []
     for i in numero:
-        if (i != '-'):
+        if (i != '-' and i.isdigit()):
             digitos.append(int(i))
     return sum(digitos)
 
