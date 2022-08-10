@@ -12,31 +12,25 @@
     
 # 2. Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar la suma de sus dígitos (utilizando una función que realice dicha suma)
 
-num= int(input("Ingrese un número: "))
-def numeritos(num):
-    suma=0
-    while (num!=0):
-        sumdigitos=  num%10
-        suma= suma+sumdigitos
-        num= num//10
-    return suma
-
-while (num!=0):
-    print("La suma de las cifras es:",numeritos(num))
-    num= int(input("Ingrese un número: "))
-print("Ingresaste cero y el cero cierra el bucle :)")
-
+def  sumadigitos (a) : # defino funcion (a) puede val
+    digitos =[int (x) for x in str(a)]   #va a leer el elemento
+    acumulador = 0   #declaro el acumulador ene su posicion
+    for i in digitos:
+        acumulador+=i
+    return acumulador
+numero = input("ingrese un numero: ")
+while numero !="0": # cero como string
+    print (sumadigitos(numero))
+    numero = input("ingrese un numero [para detener el programa ingrese 0]: ")
+print ("bucle finalizado")
 
 # 3. Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar la suma de sus dígitos. Al finalizar, mostrar la sumatoria de todos los números ingresados y la suma de sus dígitos. Reutilizar la misma función realizada en el ejercicio 2.
 
 
-# no funciona 
-
-# suma = 0
-
-# while (num!=0):
-#     print("Suma:",numeritos(num))
-#     suma= suma+num
-#     num= int(input("Ingrese un número: "))
-#     print("Suma total:", suma)
-#     print("Suma dígitos:", numeritos(suma))
+sumatoria=0
+while numero!=0:
+    print("La suma de los digitos:",sumadigitos(numero))
+    sumatoria= sumatoria+int(numero)
+    numero=int(input("Ingrese un número: [para detener el programa ingrese 0] "))
+print("La suma total es:", sumatoria)
+print("La suma de los digitos:", sumadigitos(sumatoria))
