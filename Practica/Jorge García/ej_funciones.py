@@ -17,20 +17,19 @@ else:
 # 2. Solicitar números al usuario hasta que ingrese el cero. 
 # Por cada uno, mostrar la suma de sus dígitos (utilizando una función que realice dicha suma)
 
-def sumar(num1, num2):
-    suma = num1 + num2
-    print(f"{num1} + {num2} = {suma}")
-    return suma
+def sumarDigitos(numero):
+    digitos = []
+    for i in numero:
+        if (i != '-'):
+            digitos.append(int(i))
+    return sum(digitos)
 
-num1  = ""
-num2  = ""
-while num1 != 0 and num2 != 0:
-    num1 = int(input("Número 1 [0 para salir]: "))
-    if num1 == 0: continue
-    num2 = int(input("Número 2 [0 para salir]: "))
-    if num2 == 0: continue
-    if(num1 != 0 and num2 != 0):
-        sumar(num1, num2)
+numeroStr = ""
+while numeroStr != '0':
+    numeroStr = input("Número [0 para salir]: ")
+    if numeroStr == '0': continue
+    resultado = sumarDigitos(numeroStr)
+    print(f'Suma de los digitos del número {numeroStr} = {resultado}')
 
 # 3. Solicitar números al usuario hasta que ingrese el cero. 
 # Por cada uno, mostrar la suma de sus dígitos. 
@@ -39,25 +38,20 @@ while num1 != 0 and num2 != 0:
 
 def sumatoria(lista):
     if(len(lista) > 0):
-        acumulador = 0
-        print(lista)
-        for i in lista:
-            indiceSig = lista.index(i)+1
-            if(indiceSig <= len(lista)-1):
-                sumar(i, lista[indiceSig])
-            acumulador += i
-        return acumulador
+        return sum(lista)
     return None
 
-num1  = ""
-num2  = ""
-numeros = []
-while num1 != 0 and num2 != 0:
-    num1 = int(input("Número 1 [0 para salir]: "))
-    if num1 == 0: continue
-    num2 = int(input("Número 2 [0 para salir]: "))
-    if num2 == 0: continue
-    sumar(num1, num2)
-    numeros.append(num1)
-    numeros.append(num2)
-print(f'Sumatoria: {sumatoria(numeros)}')
+numeroStr = ""
+listaNumeros = []
+while numeroStr != '0':
+    numeroStr = input("Número [0 para salir]: ")
+    if numeroStr == '0': continue
+    resultado = sumarDigitos(numeroStr)
+    print(f'Suma de los digitos del número {numeroStr} = {resultado}')
+    listaNumeros.append(int(numeroStr))
+
+sumaTotal = sumatoria(listaNumeros)
+if(sumaTotal == None):
+    print('La lista esta vacia')
+else:
+    print(f'Sumatoria de la lista = {sumaTotal}')
