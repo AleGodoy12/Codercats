@@ -16,12 +16,12 @@ if(len(fechaSeparada) == 3 and int(fechaSeparada[0]) > 0 and int(fechaSeparada[0
 else:
     print("Fecha inválida")
 
-# 2. Escribir un programa que cree un diccionario de traducción español-inglés. 
-# El usuario introducirá las palabras en español e inglés separadas por dos puntos, 
-# y cada par <palabra>:<traducción> separados por comas. 
-# El programa debe crear un diccionario con las palabras y sus traducciones. 
-# Después pedirá una frase en español y utilizará el diccionario para traducirla palabra a palabra. 
-# Si una palabra no está en el diccionario debe dejarla sin traducir.
+# # 2. Escribir un programa que cree un diccionario de traducción español-inglés. 
+# # El usuario introducirá las palabras en español e inglés separadas por dos puntos, 
+# # y cada par <palabra>:<traducción> separados por comas. 
+# # El programa debe crear un diccionario con las palabras y sus traducciones. 
+# # Después pedirá una frase en español y utilizará el diccionario para traducirla palabra a palabra. 
+# # Si una palabra no está en el diccionario debe dejarla sin traducir.
 
 traducciones = {}
 palabrasUsr = input("Ingresa las traducciones [<español>:<inglés>]: ").lower()
@@ -48,22 +48,27 @@ persona = {
     "dni": 45873456,
     "edad": 28,
     "altura": 1.75,
-    "sexo": "Hombre",
     "profesion": "Programador",
     "tienePerro": True
 }
 
 atributoEliminado = persona.pop("altura")
-print(f'Se elimino el valor: {atributoEliminado}')
-persona.update({"tieneGato": False})
+print(f'\nSe elimino el valor: {atributoEliminado} del diccionario')
 persona.update({"apellido": "Diaz"})
 persona.update({"profesion": "Tester"})
-print(f'Después del update: {persona}')
+print(f'\nDespués del update: {persona}')
 
+print("\nSe obtuvo la edad con el get")
 prueba = persona.get("edad")
 print(prueba)
 prueba2 = persona.get("peso", "No esta el peso")
 print(prueba2)
 
+print("\nSe copio la persona con el copy")
 copiaPersona = persona.copy()
 print(f"Copia de persona: {copiaPersona}")
+
+dicConZip = dict(zip(["tieneGato", "email", "nacionalidad"], [False, "pepe@gmail.com", "portugués"]))
+persona.update(dicConZip)
+print("\nSe agrego el diccionario hecho con el zip a persona")
+print(persona)
