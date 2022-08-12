@@ -3,7 +3,7 @@
 # 1. Crea una tupla con los meses del año, pide números al usuario, si el numero esta entre 1 y la longitud máxima de la tupla, muestra el contenido de esa posición sino muestra un mensaje de error.
 # El programa termina cuando el usuario introduce un cero
 
-meses = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+meses = ("Enero",  "Febrero","Marzo",  "Abril", "Mayo","Junio","Julio",  "Agosto","Septiembre", "Octubbre", "Noviembre","Diciembre")
 while True:
     try:
         n = int(input("Ingrese un numero: "))
