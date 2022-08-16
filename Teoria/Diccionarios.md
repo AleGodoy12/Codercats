@@ -4,7 +4,7 @@
 2. Sintaxis
 3. Ejemplo
 
-![Diccionarios](/imagenes/diccionarios.png)
+![Diccionarios]<img src="./imagenes/diccionarios.png">
 
 ### ¿Qué son y para que sirve?
 
