@@ -12,7 +12,25 @@ print ('La fecha que ingresaste es' , dia , 'de' , meses.get(mes) , 'de' , año)
 # las palabras y sus traducciones. Después pedirá una frase en español y utilizará el diccionario
 #  para traducirla palabra a palabra. Si una palabra no está en el diccionario debe dejarla sin 
 # traducir.
+dicc = {}
+def diccionario ():
+    palabraEspañol =  input('Ingresame una palabra en español')
+    palabraIngles =  input('Ingresá su traducción')
+    while (palabraEspañol == 'Listo'):
+        dicc[palabraEspañol] = palabraIngles
+        palabraEspañol =  input('Ingresame una palabra en español')
+        palabraIngles =  input('Ingresá su traducción')
+    return dicc
 
+def traduccion ():
+    frase =  input('Ingresá una frase')
+    frase2 = frase.split( )
+    i = 0
+    while (i < len(frase2)):
+        dicc.get(i)
+        print (i)
+
+diccionario()
 
 #3
 dicc = {'nombre': 'Luján', 'edad': 24, 'color favorito': 'verde', 'mascota/s':'Brishito', 'lugar favorito': 'mi cama'}

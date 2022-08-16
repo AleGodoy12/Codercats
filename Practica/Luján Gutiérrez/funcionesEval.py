@@ -8,8 +8,10 @@ def parImpar (num):
 parImpar(4)
 
 #2
-# def distancia (num1, num2):
-#     print
+def distancia (num1, num2):
+    for i in range(num1, num2):
+        print(i)
+
 
 #3
 
@@ -24,3 +26,9 @@ validacion()
 #4
 def ultimaPalabra (string):
     
+    def funcion (a,b,c=[]):
+    if a==b:
+        c.append(a)
+        print(c)
+        return c
+    elif 
