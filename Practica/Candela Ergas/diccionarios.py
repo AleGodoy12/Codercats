@@ -15,6 +15,30 @@ print("La fecha ingresada es: ",fechaS[0]," de ",meses[mesD]," de ",fechaS[2])
 # Después pedirá una frase en español y utilizará el diccionario para traducirla palabra a palabra. 
 # Si una palabra no está en el diccionario debe dejarla sin traducir.
 
+diccionario={}
+dUser=input("Ingresá las palabras en español con su traduccion en inglés en el siguiente formato: español:inglés,español:inglés ")
+dUser=dUser.split(",")
+
+for palabra in dUser:
+    palabra=palabra.split(":")
+    diccionario[palabra[0]]=palabra[1]
+
+frase=input("Ingresa un frase: ")
+frase=frase.split(" ")
+
+traduccionFrase=[]
+
+for pal in frase:
+    if diccionario.get(pal)!=None:
+        traduccionFrase.append(diccionario.get(pal))
+    else:
+        traduccionFrase.append("(no tengo esta traducción)")
+
+final=""
+for a in traduccionFrase:
+    final+=a+" "
+print(final)
+
 # 3. Declare un diccionario y manipule sus datos utilizando los metodos: pop, update, get, copy y zip.
 ejemplo={"num":30,"saludo":"hola","listA":(1,2,3),"numB":2.5}
 print(ejemplo)
