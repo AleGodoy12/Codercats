@@ -20,3 +20,10 @@ def datos ():
     print('Mi nombre es' , nombre , 'y mi color favorito es' , colorFavorito)
 
 datos()
+
+# Y para que sea reutilizable
+nombre = input('Ingresá tu nombre')
+colorFavorito = input('Ingrespa tu color favorito')
+def datos (nombre, colorFav):
+   print('Mi nombre es' , nombre , 'y mi color favorito es' , colorFav)
+datos(nombre, colorFavorito)
