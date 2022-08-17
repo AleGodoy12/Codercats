@@ -24,4 +24,7 @@ def datos(nombre,color):
 print(datos(nombre,color))
 
 
+#Cande, muy practica y concreta la resolucion de los ejercicios, una cualidad que vengo observando desde practicos anteriores.
+#logras el resultado esperado disminuyendo cada vez mas las lineas de codigo.
 
+#10/10

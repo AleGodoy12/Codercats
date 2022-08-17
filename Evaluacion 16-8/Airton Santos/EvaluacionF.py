@@ -33,3 +33,7 @@ def favoritos(nombre, color):
 
 print(favoritos("Airton","violeta" ))
     
+#Airton, excelente como logras cada vez llegar al resultado con menos lineas de codigo
+#logras mantener el codigo limpio y modularizado.
+
+#10/10
