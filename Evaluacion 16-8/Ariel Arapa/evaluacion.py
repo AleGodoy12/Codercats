@@ -42,3 +42,8 @@ def mensaje(name, color):
 
 mensaje1 = mensaje(name, color)
 print(mensaje1)
+
+#Ariel, resuelves los ejercicios usando los conocimientos que ya tienes y los que vas incluyendo en el proceso
+#te tomas la tarea de integrarlos y sacar modulos de codigo solidos y reutilizables.
+
+#10/10

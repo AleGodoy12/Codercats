@@ -33,3 +33,6 @@ nombre = 'Jorge'
 colorFav = 'Negro'
 
 print(mostrarGusto(nombre, colorFav))
+
+#Jorge, bien planteadas las resoluciones, usando ademas conocimientos adquiridos de forma autodidacta.
+#10/10

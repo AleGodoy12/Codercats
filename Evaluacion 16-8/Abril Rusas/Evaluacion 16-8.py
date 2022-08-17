@@ -36,3 +36,7 @@ def datos(x,y):
 nombre=input("Ingrese su nombre: ")
 color=input("Ingrese su color favorito: ")
 print(datos(nombre,color))          #verificacion
+
+
+#Abril, muy bien el planteo de los ejercicios y mucho mejor aun el uso de metodos para simplificarlo
+#10/10

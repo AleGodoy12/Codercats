@@ -30,3 +30,8 @@ print(dniValido(dni))
 # def nombreycolor(nombre, color):
 #     return (f"¡Hola! tu nombre es: {nombre} y tu color favorito es: {color}")
 # print(nombreycolor(nombre, color))
+
+#Paulina, muy pero muy bien la resolucion y el planteo de los practicos. Vas cada dia mejorando la logica y 
+#las formas en las que escribes el codigo, se nota mucho el interes y el compromiso.
+
+#10/10
