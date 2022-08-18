@@ -28,18 +28,21 @@ palabrasUsr = input("Ingresa las traducciones [<español>:<inglés>]: ").lower()
 # palabrasUsr = "hola:hello, adios:bye, correr:run, lentes:glasses, mesa:table, invierno:winter"
 palabrasUsr = palabrasUsr.replace(" ", "")
 palabrasUsr = palabrasUsr.split(",")
-# print(palabrasUsr)
 for i in palabrasUsr:
     traduccion = i.split(":")
-    traducciones[traduccion[0].capitalize()] = traduccion[1].capitalize()
-# print(traducciones)
-
-palabraEsp = input("Ingresa una palabra en español: ").capitalize()
-palabraEng = traducciones.get(palabraEsp)
-if(palabraEng != None):
-    print(f'Traduccion de {palabraEsp} --> {palabraEng}')
-else:
-    print("No tengo esa traducción, vuelve más tarde.")
+    traducciones[traduccion[0]] = traduccion[1]
+    
+texto = input("Ingresa un texto en español: ").lower()
+# texto = 'hola como estas estamos en invierno adios'
+texto = texto.split(" ")
+traduccion = ""
+for palabra in texto:
+    palabraEng = traducciones.get(palabra)
+    if(palabraEng != None):
+        traduccion += palabraEng + " "
+    else:
+        traduccion += palabra + " "
+print(traduccion)
 
 # 3. Declare un diccionario y manipule sus datos utilizando los metodos: pop, update, get, copy y zip.
 
