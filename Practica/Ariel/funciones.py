@@ -43,7 +43,7 @@ while True:
 # a = []
 
 # def suma(numeros, array):
-#     list1 = []
+
 #     sum = 0
 #     sumar = 0
 #     digitos = [int (x) for x in str(numeros)]
@@ -52,7 +52,6 @@ while True:
 #     array.append(numeros)
 #     for n in array:
 #         sum += n
-#         [list1.append(a) for a in str(n)]
 #     a = f"La suma de los digitos es: {sumar}"
 #     b = f"La sumatoria de los numeros: {sum}"
 #     return a, b
