@@ -129,10 +129,11 @@ print(Array_1, Array_2) # Dos arrays de 5 elementos, con números aleatorios del
 Arrays_concatenados = np.concatenate([Array_1, Array_2]) # Un array que contiene los 10 números concatenados
 print(Arrays_concatenados)
 Si queremos combinar los arrays en forma explícita de manera horizontal o vertical, usaremos las funciones vstack y hstack
-Array_1 = np.random.randint(10,size=5)
-Array_2 = np.random.randint(10,size=5)
-print(Array_1, Array_2) # Dos arrays de 5 elementos, con números aleatorios del 0 al 9
-Arrays_concatenados = np.concatenate([Array_1, Array_2]) # Un array que contiene los 10 números concatenados
+<br>
+Array_1 = np.random.randint(10,size=5)<br>
+Array_2 = np.random.randint(10,size=5)<br>
+print(Array_1, Array_2) # Dos arrays de 5 elementos, con números aleatorios del 0 al 9<br>
+Arrays_concatenados = np.concatenate([Array_1, Array_2]) # Un array que contiene los 10 números concatenados <br>
 print(Arrays_concatenados)
 Array_extra = np.array([[10],[20]]) # Un array de dos dimensiones (vertical) con los números 10 y 20
 print(Array_extra)
