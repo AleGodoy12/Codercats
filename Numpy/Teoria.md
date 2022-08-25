@@ -121,7 +121,7 @@ print(Ajedrez_64)
 Ajedrez_64 = Ajedrez_64.reshape(8,8) # Equivalente al comando anterior
 print(Ajedrez_64)
 
-## Concatenación
+## Concatenación     *** chequear 
 Para “enganchar” o concatenar dos o más arrays, utilizamos las funciones concatenate y vstack / hstack. Veamos algunos ejemplos:
 Array_1 = np.random.randint(10,size=5)
 Array_2 = np.random.randint(10,size=5)
