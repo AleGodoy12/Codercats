@@ -15,3 +15,7 @@
 ## -Dado el DNI de un pasajero, ver a qué país viaja.
 ## -Dado un país, mostrar cuántos pasajeros viajan a ese país.
 ## -Salir del programa.
+
+## 3. Crea un diccionario donde la clave sea el nombre del usuario y el valor sea el teléfono (no es necesario validar). Tendrás que ir pidiendo contactos hasta el usuario diga que no quiere insertar mas. No se podrán meter nombres repetidos.
+
+## 4. Escribir un programa que cree un diccionario simulando una cesta de la compra. El programa debe preguntar el artículo y su precio y añadir el par al diccionario, hasta que el usuario decida terminar. Después se debe mostrar por pantalla la lista de la compra y el coste total, con el siguiente formato
