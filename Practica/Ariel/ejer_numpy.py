@@ -47,8 +47,7 @@ import time
 # def suma():
 #     a = np.array([])
 #     while True:
-#         sum = 0  
-#         sumar = 0
+#         sum, sumar = 0, 0  
 #         numeros = int(input("Ingrese numeros: "))
 #         digitos = [x for x in str(numeros)]
 #         for i in digitos:
