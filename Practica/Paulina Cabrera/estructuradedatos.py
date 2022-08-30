@@ -117,7 +117,7 @@
 
 
 # ## -Dado el DNI de un pasajero, ver a qué país viaja.
-# def buscar_pais(viajeros, paises):
+ # def buscar_pais(viajeros, paises):
 #     dni_buscado = int(input("Ingrese su numero de DNI: "))
 #     for dni in viajeros:
 #         if dni[1] == dni_buscado:
