@@ -39,10 +39,12 @@ listaSorpresa()
 # cada una compuesta por un número de la lista original y la cantidad de veces que aparece en ella. 
 # Por ejemplo, si la lista original es  la nueva lista contendrá: [(5,3), (16,1), (2,2), (57,1)]
 dicc = {}
+arr = [5,16,2,5,57,5,2]
 def contando ():
-    arr = [5,16,2,5,57,5,2]
+    
     for i in arr:
         arr.count(i)
+        arr.append(i)
 contando()
 
 #3
