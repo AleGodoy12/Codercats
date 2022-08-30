@@ -15,6 +15,7 @@ print("Lista nueva: ", materias)
 
 
 
+
 # 2. Crea un programa que pida al usuario números, genera en una lista, cuando el usuario ingrese un 0 dejaremos de insertar. Por último, muestra los números ordenados de mayor a menor
 listaNum = []
 while True:
