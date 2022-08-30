@@ -21,11 +21,12 @@ def numerosIngresados():
     listaVacia = []
     numero = int(input("Ingrese un numero"))
 
+
     while numero != 0:
         listaVacia.append(numero)
         numero = int(input("Ingrese un numero"))
-
-    listaVacia.sort()
+        listaVacia.sort(reverse=True)
+        
     print(listaVacia)
 
 numerosIngresados()
