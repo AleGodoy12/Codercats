@@ -17,7 +17,7 @@
        [3, 0],
        [0, 0]]) -->
 
-4. Ordenar x a lo largo del segundo eje
+4. Ordenar x a lo largo del segundo eje(un vector en matriz)
 
 
 5. Generar pares de apellidos y nombres y devolver sus índices. (primero por apellido, luego por nombre).
