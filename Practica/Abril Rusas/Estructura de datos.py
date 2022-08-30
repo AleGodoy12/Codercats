@@ -1,9 +1,6 @@
 #Estructura de datos
 
 # 1. A) Solicitar al usuario que ingrese números, los cuales se guardarán en una lista. Finalizar al ingresar el número 0, el cual no debe guardarse.
-from itertools import count
-
-
 numeros=[]
 num=int(input("Ingrese un numero: "))
 while num!=0:
