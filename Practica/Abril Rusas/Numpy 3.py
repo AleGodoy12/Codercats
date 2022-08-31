@@ -16,7 +16,10 @@ matriz=np.random.randint(0,4,size=(3,2))
 print(matriz)
 
 # 4. Ordenar x a lo largo del segundo eje
-
+x=np.array([[2,2,2]])
+matriz=np.array([[0,0,0],[0,0,0],[0,0,0]])
+nuevaMatriz=np.insert(matriz, 1, x, axis=1)  
+print(nuevaMatriz)
 
 # 5. Generar pares de apellidos y nombres y devolver sus índices. (primero por apellido, luego por nombre).
 
