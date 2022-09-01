@@ -69,37 +69,36 @@ datos=[("Manuel Juarez", 19823451, "Liverpool"), ("Silvana Paredes", 22709128, "
 destinos=[("Liverpool","Inglaterra"),("Buenos Aires","Argentina"),("Glasgow","Escocia"), ("Lisboa", "Portugal")]
 
 def agregarPasajero():
-    nombre=input("Ingrese su nombre: ")
+    nombre=input("Ingrese su nombre: ").capitalize()
     dni=int(input("Ingrese su número de documento: "))
-    ciudad=input("Ingrese la ciudad de destino: ")
+    ciudad=input("Ingrese la ciudad de destino: ").capitalize()
     tupla=(nombre,dni,ciudad)
     datos.append(tupla)
     print("El pasajero ha sido agregado")
     opcion=input("Desea agregar otro pasajero? [si/no]: ").lower()
-    while opcion=="si":
+    if opcion=="si":
         agregarPasajero()
 
 ## -Agregar ciudades a la lista de ciudades.
 def agregarCiudad():
-    pais=input("Ingrese la pais de destino: ")
-    ciudad=input("Ingrese la ciudad de destino: ")
+    pais=input("Ingrese la pais de destino: ").capitalize()
+    ciudad=input("Ingrese la ciudad de destino: ").capitalize()
     tupla=(ciudad,pais)
     destinos.append(tupla)
     print("La ciudad ha sido agregada correctamente")
     opcion=input("Desea agregar otra ciudad? [si/no]: ").lower()
-    while opcion=="si":
+    if opcion=="si":
         agregarCiudad()
         
 ## -Dado el DNI de un pasajero, ver a qué ciudad viaja.
 def buscarCiudad():  
-    dni=int(input("Ingrese el nombre del pasajero: "))
+    dni=int(input("Ingrese el dni del pasajero: "))
     for dato in datos:
         if dni==dato[1]:
             return dato[2]
 
 ## -Dada una ciudad, mostrar la cantidad de pasajeros que viajan a esa ciudad.
-def cantPasajeros():
-    ciudad=input("Ingrese una ciudad: ")
+def cantPasajerosCiudad(ciudad):
     i=0
     for dato in datos:
         if dato[2]==ciudad:
@@ -118,7 +117,35 @@ def buscarPais():
                     return destino[1]
 
 ## -Dado un país, mostrar cuántos pasajeros viajan a ese país.
+def cantPasajerosPais():
+    pais=input("Ingrese un país: ").capitalize()
+    for destino in destino:
+        if destino[1]==pais:
+            ciudad=destino[0]
+            cant=0
+            for dato in datos:
+                if dato[2]==ciudad:
+                    cant+=1
+            display=("La cantidad de pasajeros que viaja a ese país son: ",cant)
+            return display
 ## -Salir del programa.
+
+#Programa con funciones integradas
+opcion=None
+while opcion!=6:
+    opcion=int(input("[1] Agregar pasajeros\n[2] Agregar destino\n[3] Buscar ciudad\n[4] Cantidad de pasajeros que viajan a una ciudad\n[5] Cantidad de pasajeros que viajan a un país\n[6] Salir\nMarque una opción:"))
+    if opcion==1:
+        print(agregarPasajero(),"\n")
+    if opcion==2:
+        print(agregarCiudad(),"\n")
+    if opcion==3:
+        print(buscarCiudad(),"\n")
+    if opcion==4:
+        ciudad=input("Ingrese una ciudad: ")
+        print(cantPasajerosCiudad(ciudad),"\n")
+    if opcion==5:
+        print(cantPasajerosPais(),"\n")
+print("Programa finalizado")
 
 ## 3. Crea un diccionario donde la clave sea el nombre del usuario y el valor sea el teléfono (no es necesario validar). Tendrás que ir pidiendo contactos hasta el usuario diga que no quiere insertar mas. No se podrán meter nombres repetidos.
 agenda={}
