@@ -119,7 +119,7 @@ def buscarPais():
 ## -Dado un país, mostrar cuántos pasajeros viajan a ese país.
 def cantPasajerosPais():
     pais=input("Ingrese un país: ").capitalize()
-    for destino in destino:
+    for destino in destinos:
         if destino[1]==pais:
             ciudad=destino[0]
             cant=0
@@ -127,7 +127,7 @@ def cantPasajerosPais():
                 if dato[2]==ciudad:
                     cant+=1
             display=("La cantidad de pasajeros que viaja a ese país son: ",cant)
-            return display
+            return display        
 ## -Salir del programa.
 
 #Programa con funciones integradas
@@ -163,9 +163,11 @@ def agregarNumeros():
         elif opcion=="si":
             agregarNumeros()
 
+agregarNumeros() #para que se pueda probar
+
 # 4. Escribir un programa que cree un diccionario simulando una cesta de la compra. El programa debe preguntar el artículo y su precio y añadir el par al diccionario, hasta que el usuario decida terminar. Después se debe mostrar por pantalla la lista de la compra y el coste total, con el siguiente formato.
+ticket={}
 def carrito():
-    ticket={}
     articulo=input("Ingrese un articulo: ")
     precio=int(input("Ingrese el precio: "))
     ticket.update({articulo:precio})
@@ -175,3 +177,5 @@ def carrito():
         return ("El total es: $",total)
     elif opcion=="si":
         carrito()
+
+carrito() #para que se pueda probar
