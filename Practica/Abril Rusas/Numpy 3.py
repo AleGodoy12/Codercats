@@ -22,7 +22,9 @@ nuevaMatriz=np.insert(matriz, 1, x, axis=1)
 print(nuevaMatriz)
 
 # 5. Generar pares de apellidos y nombres y devolver sus índices. (primero por apellido, luego por nombre).
-
+surnames =    ('Hertz',    'Galilei', 'Hertz')
+first_names = ('Heinrich', 'Galileo', 'Gustav')
+print (np.lexsort((first_names, surnames)))
 # <!-- OUTPUT [1 2 0] -->
 
 # 6. Cree una matriz tal que su quinto elemento sea el mismo que el elemento de x ordenado, y divida otros elementos por su valor.
