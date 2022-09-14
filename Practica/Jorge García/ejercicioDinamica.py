@@ -31,9 +31,7 @@ def obtenerAlumnoMasBajo(listaAlumnos):
             alturaMin = alumno["Altura"]
     return alumnoMin
 
-def agregarAlumno(listaAlumnos):
-    cursos = ["A", "B", "C"]
-    grados = [x for x in range(1, 6)]
+def agregarAlumno(listaAlumnos, cursos, grados):
     nombre = input("Nombre: ").capitalize()
     try:
         altura = int(input("Altura: "))
@@ -50,6 +48,8 @@ def agregarAlumno(listaAlumnos):
         print("Grado o curso inválido")
     return False
 
+cursos = ["A", "B", "C"]
+grados = [x for x in range(1, 6)]
 listaAlumnos = [{"Nombre": "Pepe", "Altura": 150, "Grado": 5, "Curso":"A"},
                 {"Nombre": "Ale", "Altura": 190, "Grado": 5, "Curso":"B"},
                 {"Nombre": "Maria", "Altura": 170, "Grado": 5, "Curso":"A"}]
@@ -57,25 +57,28 @@ listaAlumnos = [{"Nombre": "Pepe", "Altura": 150, "Grado": 5, "Curso":"A"},
 respuesta = None
 os.system("cls")
 while respuesta != "no":
-    if agregarAlumno(listaAlumnos):
+    if agregarAlumno(listaAlumnos, cursos, grados):
         print("¡Alumno agregado!")
     respuesta = input("¿Desea ingresar otro alumno [si/no]?: ").lower()
     os.system("cls")
 
 # Consulta a)
+print("\nCONSULTA A\n")
 for alumno in listaAlumnos:
-    print(f"\nNombre: {alumno['Nombre']} - Posición: {listaAlumnos.index(alumno)+1}")
+    print(f"Nombre: {alumno['Nombre']} - Posición: {listaAlumnos.index(alumno)+1}")
 
 # Consulta b)
-print(f"\nCantidad de alumnos en el curso A: {contarCantidadCurso(listaAlumnos, 'A')}")
-print(f"Cantidad de alumnos en el curso B: {contarCantidadCurso(listaAlumnos, 'B')}")
-print(f"Cantidad de alumnos en el curso C: {contarCantidadCurso(listaAlumnos, 'C')}") 
+print("\nCONSULTA B\n")
+for curso in cursos:
+    print(f"Cantidad de alumnos en el curso {curso}: {contarCantidadCurso(listaAlumnos, curso)}")
 
 # Consulta c)
+print("\nCONSULTA C\n")
 alumnoAlto = obtenerAlumnoMasAlto(listaAlumnos)
 alumnoBajo = obtenerAlumnoMasBajo(listaAlumnos)
-print(f"\nAltura del alumno más alto de 5to grado: {alumnoAlto['Altura']} cm - Posición en la fila: {listaAlumnos.index(alumnoAlto)+1}")
+print(f"Altura del alumno más alto de 5to grado: {alumnoAlto['Altura']} cm - Posición en la fila: {listaAlumnos.index(alumnoAlto)+1}")
 print(f"\nAltura del alumno más bajo de 5to grado: {alumnoBajo['Altura']} cm - Posición en la fila: {listaAlumnos.index(alumnoBajo)+1}")
 
 # Consulta d)
-print(f"\nPromedio de altura: {calcularPromAltura(listaAlumnos)} cm\n")
+print("\nCONSULTA D\n")
+print(f"Promedio de altura: {calcularPromAltura(listaAlumnos)} cm\n")
