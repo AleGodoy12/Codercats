@@ -19,6 +19,7 @@ import numpy as np
 
 # * 4, Crea una matriz, que puede completar la transposición de la posición de las coordenadas de (0,1,3) a (3,0,1). ...
 x = np.ones((0, 1, 3))
+print(x)
 a = np.transpose(x, (2, 0, 1)).shape
 print(a)
 
