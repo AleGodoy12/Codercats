@@ -1,3 +1,4 @@
+#Alumnos que ya estaban en la fila
 alumnos = [
     ("Abril",5,"A",170),
     ("Florencia",5,"A",165),
@@ -7,6 +8,7 @@ alumnos = [
     ("Alejandro",4,"C",173),
 ]
 
+#Modulos
 def agregarAlumno():
     nombre= input("Ingrese el nombre del alumno: ").capitalize()
     grado = int(input("Ingrese el grado del alumno: "))
@@ -58,6 +60,7 @@ def promedioAltura():
     promedio=sum(alturas)/len(alturas)
     print("El promedio de altura es:",promedio)  
 
+#Ejecucion de la app
 menu=None
 while menu !="F":
     menu= input("\n      --- Menú ---\n[A] Agregar alumnos\n[B] Cantidad de alumnos por curso\n[C] Alumno más alto\n[D] Alumno más bajo\n[E] Promedio alturas\n[F] Salir\nOpción: ").capitalize()
