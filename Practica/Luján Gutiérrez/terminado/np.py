@@ -34,7 +34,11 @@ print('Una matriz 4*4 \n', matriz)
 print('-------------')
 lista =[0,1,3]
 arr = np.array(lista)
-#301
+print('array original', lista)
+lista[0]= 3
+lista[1]= 0
+lista[2]= 1
+print('array actualizada', lista)
 
 #Cree una matriz bidimensional, use el índice para obtener los datos en la segunda fila, primera columna y tercera fila, segunda columna.
 print('-------------')
@@ -45,3 +49,28 @@ donde = matriz[1,0]
 print('El elemento que está en la segunda fila, primera columna es:', donde)
 donde2 = matriz[2,1]
 print('El elemento que está en la tercera fila, segunda columna es:', donde2)
+
+# Cree una matriz de formas (3, 2) y complétela con muestras aleatorias de una distribución uniforme sobre [0, 1).
+print('-------------')
+arr = np.random.rand(3, 2) 
+print('arr con decimales \n', arr)
+
+# Cree una matriz de formas (1000, 1000) y complétela con muestras aleatorias de una distribución normal estándar. Y verifique que la media y la desviación estándar estén lo suficientemente cerca de 0 y 1 respectivamente.
+print('-------------')
+matriz=np.random.randn(1000,1000)
+media=np.median(matriz)
+desviacion=np.std(matriz)
+print('media:', media, 'desviación:', desviacion)
+
+#Cree una matriz de formas (3, 2) y complétela con números enteros aleatorios que van desde 0 a 3 (inclusive) de una distribución uniforme discreta.
+print('-------------')
+matriz = np.random.randint(0, 3)
+matriz = arr.reshape(3,2)
+print(matriz)
+
+#Ordenar x a lo largo del segundo eje
+print('-------------')
+arr = np.array([[1,1,1]])
+matriz = np.array([[0,0,0],[0,0,0],[0,0,0]])
+nuevaMatriz = np.insert(matriz, 1, arr, axis=1)  
+print('x a lo largo del segundo eje' , nuevaMatriz)

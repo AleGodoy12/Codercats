@@ -49,11 +49,9 @@ print(matriz_4)
 # <!-- OUTPUT [1 2 0] -->
 
 print("\nEjercicio 5")
-nombre1 = ('García', 'Jorge')
-nombre3 = ('Diaz', 'Pepe')
-nombre2 = ('Gonzalez', 'Pepa')
-arrayNp = np.array((nombre1, nombre2, nombre3))
-print(arrayNp)
+apellidos = ('Zeta', 'Arapa', 'Diaz')
+nombre = ('Andres', 'Carla', 'Gustavo')
+print("\nEjercicio 5:", np.lexsort((nombre, apellidos)), "\n")
 
 # 6. Cree una matriz tal que su quinto elemento sea el mismo que el elemento de x ordenado, y divida otros elementos por su valor.
 
