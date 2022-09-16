@@ -11,6 +11,10 @@
 <!-- OUTPUT -0.00110028519551
 0.999683483393 -->
 
+<!-- matriz=np.random.randn(1000,1000)
+media=np.median(matriz)
+desviacion=np.std(matriz) -->
+
 3. Cree una matriz de formas (3, 2) y complétela con números enteros aleatorios que van desde 0 a 3 (inclusive) de una distribución uniforme discreta.
 
 <!-- OUTPUT array([[1, 3],
@@ -18,6 +22,10 @@
        [0, 0]]) -->
 
 4. Ordenar x a lo largo del segundo eje(un vector en matriz)
+<!-- x=np.array([[2,2,2]])
+matriz=np.array([[0,0,0],[0,0,0],[0,0,0]])
+nuevaMatriz=np.insert(matriz, 1, x, axis=1)  
+print(nuevaMatriz) -->
 
 
 5. Generar pares de apellidos y nombres y devolver sus índices. (primero por apellido, luego por nombre).
