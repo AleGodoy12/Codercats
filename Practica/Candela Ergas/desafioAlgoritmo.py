@@ -97,6 +97,7 @@ def promedioAlturas():
     print(f"\nEl promedio de alturas entre los alumnos de todos los cursos es de {round(promedio,2)} cm. ")
 #promedioAlturas()
 
+#Defino una función donde ejecutaré una a una las funciones anteriores.
 def aplicacion():
     print(f"Estos son son los alumnos que hay actualmente: \n {alumnos}\n ")
     posicion()
@@ -104,6 +105,7 @@ def aplicacion():
     cantCurso()
     alturas()
     promedioAlturas()
+    #Consulto si quiere agregar más alumnos a la lista. Si elige "s" le permitirá ingresar más, y luego mostrará los resultados actualizados, si elige otra cosa finalizaremos.
     confirmacion = input("\nYa viste todos los datos disponibles! Querés agregar más alumnos? [s/n] : ").lower()
     if confirmacion == "s":
         agregarAlumno()
