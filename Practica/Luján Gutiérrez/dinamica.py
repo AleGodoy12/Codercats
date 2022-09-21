@@ -1,4 +1,3 @@
-from pickletools import decimalnl_long
 import numpy as np
 
 # Para probar los ejercicios a partir del n°2
@@ -71,6 +70,7 @@ def minMaxAltura (alumnos):
     print('La mínima altura es', min(agregando), 'y la máxima altura es', max(agregando))
             
 minMaxAltura(alumnos)
+
 
 def promedio (alumnos):
     alturaArr = []
