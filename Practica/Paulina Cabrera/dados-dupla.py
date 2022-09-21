@@ -6,7 +6,7 @@ def tiradaDeDados ():
 
 #3
     while jugar != 'Z':
-        dados = np.random.randint(1,6,2)
+        dados = np.random.randint(1,7,2)
 #4 
         suma = sum(dados)
 #5 
