@@ -5,7 +5,7 @@ alumnos = [
     ("Lujan",5,"A",160),
     ("Lucas",5,"B",174),
     ("Ariel",3,"B",180),
-    ("Alejandro",4,"C",173),
+    ("Alejandro",4,"C",173)
 ]
 
 #Modulos
