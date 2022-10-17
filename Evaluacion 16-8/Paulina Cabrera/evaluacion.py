@@ -21,6 +21,7 @@ def dniValido(dni):
     else:
         return (f"El DNI: '{dni}' es inválido")
 print(dniValido(dni))
+
 # 3. Crea una funcion que retorne tu nombre y color favorito.
 
 # nombre= input("Ingresa tu nombre: ")
